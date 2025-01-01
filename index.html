@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power HUB HNS Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="content">
+    <h1>Power HUB HNS Server</h1>
+    <h2>Counter-Strike Source v34</h2>
+    <p>Модификация Counter-Strike 1.6, напоминающая игру в прятки. Сыграть сможет каждый и показать на что он способен! Контр-террористы должны поймать (догнать и убить) террористов. Террористы в свою очередь должны продержаться целый раунд и не дать противоположной команде поймать их, для этого им нужно делать различные прыжки/сюрф элементы, чтобы иметь скорость и преимущество.</p>
+    <div class="buttons">
+        <a href="https://discord.gg/B9NrT3RYdA" class="btn discord-btn">
+            <img src="assets/img/discord.png" alt="Discord"> PowerHUB
+        </a>
+        <a href="https://vk.com/powerhub?from=search" class="btn vk-btn">
+            <img src="assets/img/vk.png" alt="VK"> PowerHUB
+        </a>
+        <button class="btn details-btn" onclick="openModal()">
+            <img src="assets/img/info.png" alt="Details"> Подробнее
+        </button>
+    </div>
+</div>
+<div id="overlay" class="overlay" onclick="closeModal()"></div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'powerhub')">
+                <img src="assets/img/web.png" alt="PowerHUB"> PowerHUB
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'how-to-download')">
+                <img src="assets/img/download.png" alt="Download"> Как Скачать?
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'movement')">
+                <img src="assets/img/jump.png" alt="Jump"> Мувмент
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'maps')">
+                <img src="assets/img/info2.png" alt="Maps"> Карты
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'commands')">
+                <img src="assets/img/chat.png" alt="Commands"> Команды
+            </button>
+        </div>
+        <div class="tab-content" id="powerhub">
+            <div class="tsarvar-widget-container">
+                <!-- TSARVAR WIDGET -->
+                <a href="https://tsarvar.com/servers/counter-strike-source/62.122.213.87:1337" data-tsarvarServerId="449046">Сервер POWERHUB | HIDE N SEEK | CS:GO</a>
+                <script type="text/javascript" charset="utf-8" src="https://widget.tsarvar.com/load.js" async></script>
+                <script type="text/javascript">
+                    (function(k){(window[k]||(window[k]=[])).push({
+                        element:'*[data-tsarvarServerId="449046"]',
+                        serverId:449046,
+                        serverIp:'62.122.213.87',
+                        serverPort:1337,
+                        color:'#f7f7f7'
+                    });})('TsarvarWidgetQueue');
+                </script>
+                <!-- /TSARVAR WIDGET -->
+            </div>
+        </div>
+        <div class="tab-content" id="how-to-download">
+            <p>Чтобы играть на сервере, вам надо установить <a href="https://clientmod.ru/misc/language?ysclid=m5d012pye6453532720" target="_blank" class="clientmod-link">ClientMod</a>. Далее найти наш сервер в самой игре в меню серверов или по IP: <span class="highlight-green">62.122.213.87:1337</span>.</p>
+        </div>
+        <div class="tab-content" id="movement">
+            <p><span class="highlight-blue">Trix</span> - это взаимодействие игрока с объектами на карте, когда игрок делает более 2 прыжков за один трюк.<br><span class="highlight-black">Сложность:</span> <span class="highlight-green">Легкий</span>/<span class="highlight-red">Трудно</span></p>
+            <p><span class="highlight-blue">Juke</span> - это полнейшая доминация над вашим оппонентом, с помощью него вы теряетесь из виду игрока, из-за чего ваш оппонент теряет скорость, а может и вовсе упасть вниз.<br><span class="highlight-black">Сложность:</span> <span class="highlight-orange">Средний</span></p>
+            <p><span class="highlight-blue">Own</span> - это когда один игрок, запрыгивает на голову другому, в некоторых случаях вы получите буст скорости.<br><span class="highlight-black">Сложность:</span> <span class="highlight-orange">Средний</span></p>
+            <p><span class="highlight-blue">DoubleDuck</span> - это механика, с помощью который вы набираете скорость, делая стрейфы и при этои нажимая a/d , w/s.<br><span class="highlight-black">Сложность:</span> <span class="highlight-red">Трудно</span></p>
+        </div>
+        <div class="tab-content" id="maps">
+            <p><span class="highlight-blue">BBcity</span> - Карта, пришедшая из CS:GO версии мода. Триксы на ней довольно легко выучить, и эта карта хорошо подойдет для новичков, так как на ней нет особо трудных объектов, и все будет легко после пары минут игры на карте.<br><span class="highlight-black">Сложность:</span> <span class="highlight-green">Легкий</span></p>
+            <p><span class="highlight-blue">JukeCity</span> - Карта, пришедшая из CS:GO версии мода. На этой карте почти нет объектов для выполнения триксов. Карта очень легка тем, что на ней очень мало объектов для взаимодействия, поэтому карта подойдет для новичков.<br><span class="highlight-black">Сложность:</span> <span class="highlight-green">Легкий</span></p>
+            <p><span class="highlight-blue">Rayish Brick-World</span> - Карта, пришедшая из CS 1.6 версии мода. На этой карте очень много подъемов и спусков, а также объектов, с помощью которых опытные игроки теряются из вашего взгляда. Эта карта явно не подходит для новичков, так как они постоянно будут терять скорость из-за большого количества объектов, а больше подойдет для средних игроков.<br><span class="highlight-black">Сложность:</span> <span class="highlight-orange">Средний</span></p>
+            <p><span class="highlight-blue">DevBlocks</span> - Карта, пришедшая из CS:GO версии мода. На этой карте довольно много трудных объектов для новичков, а также слишком много трудных прыжков, на которых неопытный игрок будет умирать. Карта лучше всего подойдет для средних и опытных игроков, но не новичков.<br><span class="highlight-black">Сложность:</span> <span class="highlight-orange">Средний+</span></p>
+            <p><span class="highlight-blue">Rooftops</span> - Карта, пришедшая из CS 1.6 версии мода. На этой карте одно из самых больших количеств объектов для триксов и других трюков. Карта трудна тем, что она очень "узкая", и неопытный игрок будет постоянно врезаться во все подряд. Самая не рекомендуемая карта для начала игры на HNS, но очень подходит для продвинутых игроков.<br><span class="highlight-black">Сложность:</span> <span class="highlight-red">Трудный</span></p>
+        </div>
+        <div class="tab-content" id="commands">
+            <p>Команды на сервере:</p>
+            <ul>
+                <li><span class="highlight-blue">!shop</span> - открыть меню магазина</li>
+                <li><span class="highlight-blue">!gm</span> - голосование за смену режима</li>
+                <li><span class="highlight-blue">!rtv</span> - голосование за смену карты</li>
+                <li><span class="highlight-blue">!nominate</span> - номинировать следующую карту</li>
+                <li><span class="highlight-blue">!hideknife</span> - скрыть нож</li>
+                <li><span class="highlight-blue">!wh</span> - посвистеть</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+    <div class="button-item">
+        <div class="icon-circle">
+            <img src="assets/img/happy.png" alt="Веселись">
+        </div>
+        <h3>Веселись</h3>
+        <p>Самое главное на hns это веселье, играй только ради удовольствия.</p>
+    </div>
+    <div class="button-item">
+        <div class="icon-circle" onclick="window.open('https://discord.com/channels/1234176217377280101/1259968481609125929', '_blank')">
+            <img src="assets/img/donate.png" alt="Поддержка">
+        </div>
+        <h3>Поддержка</h3>
+        <p>Ты можешь поддержать проект купив у нас вип, который даст: - Роль в дискорд сервере - Префикс на сервере - Приятные бонусы</p>
+    </div>
+    <div class="button-item">
+        <div class="icon-circle" onclick="toggleTheme()">
+            <img src="assets/img/theme.png" alt="Смена темы">
+        </div>
+        <h3>Смена темы</h3>
+        <p>Ты можешь сменить тему на этом сайте.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
